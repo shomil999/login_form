@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags always come first -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/font-awesome//css/font-awesome.min.css">   <!-- for including font-icons...there are two bootstrap classes..font-awesome ans bootstrap-social-->
+     <link rel="stylesheet" href="node_modules//bootstrap-social/bootstrap-social.css">
+     <link rel="stylesheet" href="css/styles.css">
+
+    <title>Login Form</title>
+</head>
+
+<body>
+  
+
+   
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-8">
+                    <h1>Login Form</h1>
+                    <p class="d-none d-sm-block">To login: click on button</p>
+                </div>
+
+                <div class=" col-12 col-sm align-self-center">
+                    
+                                                                                      <!--button with tooptip-->
+                 <!--- <a role="button" class="btn btn-block nav-link btn-warning"     
+                  data-toggle="tooltip" data-html="true"                  
+                  title="Or call us at <br><strong>+91 7905239336 </strong>"
+                  data-placement="bottom" href="#goto">Reserve Table  
+                </a>      -->
+                        
+                <a role ="button" class="btn btn-block nav-link btn-warning"
+                data-toggle="modal" data-target="#tableModal">Login</a>
+
+               
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="tableModal" class="modal fade" role="dialog">        <!--login modal-->
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title success">Login Form</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                          &times;                                              <!--cross button at top-->
+                      </button>                                              
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">            <!--divides the form into rows-->
+                          <label for="firstname" class="col-md-2" class="col-form-label"> First Name</label>
+                          <div class="col-md-10">
+                           <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+       
+                          </div>
+       
+                        </div>
+                           <div class="form-group row">     
+                               <label for="lastname" class="col-md-2" class="col-form-label"> 
+                                   Last Name</label>
+                          <div class="col-md-10">
+                           <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">       
+                           </div>
+                           </div>
+
+                          
+                            
+                           <div class=" row form-group">
+                            <div class="col-12 col-md-2">
+                                <h6>Gender</h6>
+                            </div>
+                            <div class=" col-12 col-md-8">
+                             <div class=" form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                 <label class="form-check-label" for="inlineRadio1">Male</label>
+                                 </div>
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                    </div> 
+                                    <div class=" form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Other</label>
+                                        </div>
+                               
+                             </div>
+                           </div>
+
+
+                           <div class="form-group row">           
+                               <label for="telnum" class=" col-12 col-md-2" class="col-form-label"> Contact</label>
+                               <div class=" col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Areacode">
+            
+                               </div>
+                               <div class=" col-7 col-md-7">
+                                   <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+               
+                                  </div>
+                        </div>
+                        <div class="form-group row">     
+                           <label for="emailid" class="col-md-2" class="col-form-label"> 
+                               Email</label>
+                      <div class="col-md-10">
+                       <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">       
+                       </div>
+                       </div>
+                        
+                     
+                       <div class="form-group row">     
+                          <div class="col-md-6 offset-md-2">
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                  <label class="form-check-label" for="approve">
+                                      <strong> May we contact you? </strong>
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="col-md-3 offset-md-1">
+                              <select class="form control">
+                                  <option>Tel.</option>
+                                  <option>Email</option>
+                              </select>
+                          </div>
+                       </div>
+                     
+                       <div class="form-group row">     
+                         <div class="col-md-10 offset-md-2">
+                             <button type="submit" class="btn btn-primary">
+                                 Login
+                             </button>
+                         </div>
+                       </div>
+       
+       
+       
+       
+                       </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+ <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+ <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+ <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+                                            
+
+</body>
+
+</html>
